@@ -9,12 +9,13 @@
 
 body {
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
     background: linear-gradient(to right, #6a11cb, #2575fc);
     color: white;
     text-align: center;
+    padding: 1rem;
 }
 
 .container {
@@ -69,7 +70,7 @@ button:hover {
     background: #e07b00;
 }
 
-#result {
+.result-styles {
     margin-top: 20px;
     padding: 10px;
     font-size: 18px;
@@ -89,4 +90,32 @@ button:hover {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.dimOverlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.popup {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1.5rem;
+    border-radius: 8px;
+
+    p {
+        margin: 1.5rem;
+        color: black;
+    }
+}
+
+.hidden {
+    display: none;
 }
